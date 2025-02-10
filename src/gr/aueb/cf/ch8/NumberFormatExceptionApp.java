@@ -9,17 +9,17 @@ public class NumberFormatExceptionApp {
         int num = 0;
         String inputStr = "";
 
-        //   try {
-        System.out.println("Please insert an int");
-        inputStr = in.nextLine();
+     //   try {
+            System.out.println("Please insert an int");
+            inputStr = in.nextLine();
 
-        if (!isInt(inputStr)) {
-            System.out.println("Error in parsing.");
-            System.exit(1);
-        }
-        num = Integer.parseInt(inputStr);
+            if (!isInt(inputStr)) {
+                System.out.println("Error in parsing.");
+                System.exit(1);
+            }
+            num = Integer.parseInt(inputStr);
 
-        System.out.println(num);
+            System.out.println(num);
 //        } catch (NumberFormatException e) {
 //            System.out.println("Input must be an int");
 //        }

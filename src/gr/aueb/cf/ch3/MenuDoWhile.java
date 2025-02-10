@@ -3,7 +3,7 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * show a menu at least once
+ * Show a menu at least once.
  */
 public class MenuDoWhile {
 
@@ -16,10 +16,9 @@ public class MenuDoWhile {
             System.out.println("1. Insert");
             System.out.println("2. Delete");
             System.out.println("3. Quit");
-
             choice = in.nextInt();
         } while (choice != 3);
 
-        System.out.println("Thanks for using the Menu App");
+        System.out.println("Thanks for using the Menu app");
     }
 }

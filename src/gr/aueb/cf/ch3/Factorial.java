@@ -3,7 +3,7 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * calculates n!
+ * Calculates n!
  */
 public class Factorial {
 
@@ -13,11 +13,12 @@ public class Factorial {
         int facto = 1;
         int i = 1;
 
-        System.out.println("Please insert num");
+        System.out.println("Please insert input num");
         inputNum = in.nextInt();
 
+        // facto = ...
         while (i <= inputNum) {
-            facto *= i;
+            facto *= i; // facto = facto * i;
             i++;
         }
 

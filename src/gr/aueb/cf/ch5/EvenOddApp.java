@@ -8,10 +8,17 @@ public class EvenOddApp {
         System.out.println(num + " is odd: " + isOdd(num));
     }
 
+
     public static boolean isEven(int num) {
         return num % 2 == 0;
     }
 
+    /**
+     * Delegation Design Pattern.
+     *
+     * @param num
+     * @return
+     */
     public static boolean isOdd(int num) {
         return !isEven(num);
     }

@@ -25,9 +25,9 @@ public class NamesScanning {
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
-    }
+     }
 
-    public static void printFormatted(PrintStream ps, String[] tokens) {
-        ps.printf("{ \"Firstname\": \"%s\", \"Lastname\": \"%s\", \"City\": \"%s\" },\n", tokens[0], tokens[1], tokens[2]);
-    }
+     public static void printFormatted(PrintStream ps, String[] tokens) {
+         ps.printf("{ \"Firstname\": \"%s\", \"Lastname\": \"%s\", \"City\": \"%s\" },\n", tokens[0], tokens[1], tokens[2]);
+     }
 }

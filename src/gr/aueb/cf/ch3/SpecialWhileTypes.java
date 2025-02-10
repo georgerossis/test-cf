@@ -2,6 +2,9 @@ package gr.aueb.cf.ch3;
 
 import java.util.Scanner;
 
+/**
+ * Special forms of while.
+ */
 public class SpecialWhileTypes {
 
     public static void main(String[] args) {
@@ -16,21 +19,19 @@ public class SpecialWhileTypes {
             i++;
         }
 
-
-        while ( i < 1) {
+        while (i < 1) {
             System.out.println("Never gets in");
             i++;
         }
 
-        while ( i <= 1) {
+        while (i <= 1) {
             System.out.println("One time gets in");
             i++;
         }
 
         while (true) {
-            System.out.println("Internal loop");
+            System.out.println("Eternal loop");
         }
-
 
 
     }

@@ -3,11 +3,10 @@ package gr.aueb.cf.ch5;
 import java.util.Scanner;
 
 /**
- * Εμφανίζει ένα menu επιλογών και ο χρήστης
- * επιλέγει ένα menu item και στη συνέχει ανάλογα
+ * Εμφανίζει ένα μενού επιλογών και ο χρήστης
+ * επιλέγει ένα menu item και στη συνέχεια ανάλογα
  * με την επιλογή, εκτελείται κάποια ενέργεια.
  */
-
 public class MenuApp {
 
     public static void main(String[] args) {
@@ -17,14 +16,13 @@ public class MenuApp {
         do {
             printMenu();
             choice = scanner.nextInt();
-            if (!isChoiseValid(choice)) {
+
+            if (!isChoiceValid(choice)) {
                 System.out.println("Error. Choice not valid.");
                 continue;
             }
 
             doOnChoice(choice);
-
-            //
         } while (choice != 5);
     }
 
@@ -37,11 +35,12 @@ public class MenuApp {
         System.out.println("5. Έξοδος");
     }
 
-    public static boolean isChoiseValid(int choice) {
+    public static boolean isChoiceValid(int choice) {
         return choice >= 1 && choice <=5;
     }
 
     public static void doOnChoice(int choice) {
+
         switch (choice) {
             case 1:
                 System.out.println("Εισαγωγή process");
@@ -56,12 +55,11 @@ public class MenuApp {
                 System.out.println("Ενημέρωση process");
                 break;
             case 5:
-                System.out.println("Έξοδος process");
+                System.out.println("Έξοδος");
                 break;
             default:
                 System.out.println("Λάθος επιλογή");
                 break;
         }
     }
-
 }

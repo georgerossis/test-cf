@@ -6,12 +6,12 @@ public class PowerAppRecursive {
 
     }
 
-
     /**
-     * Recursive version of Power App
-     * @param a  the base
-     * @param n  the power
-     * @return  the result
+     * Recursive version of power app.
+     *
+     * @param a     the base.
+     * @param n     the power.
+     * @return      the base raised to the power.
      */
     public static int power(int a, int n) {
 //        if (n == 0) return 1;

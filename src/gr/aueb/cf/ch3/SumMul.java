@@ -1,8 +1,8 @@
 package gr.aueb.cf.ch3;
 
 /**
- * calculate the sum and mul of
- * first 10 integers
+ * Calculate the sum and mul of
+ * first 10 integers.
  */
 public class SumMul {
 
@@ -13,15 +13,14 @@ public class SumMul {
         int mul = 1;
 
         while (i <= 10) {
-            sum = sum + i; // ισοδύναμο είναι το sum += i
+            // sum = sum + i;
+            sum += i;
             i++;
         }
-        System.out.println(sum);
 
         while (j <= 10) {
             mul = mul * j;
             j++;
         }
-        System.out.println(mul);
     }
 }

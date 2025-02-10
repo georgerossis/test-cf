@@ -12,7 +12,7 @@ public class PdfBufferedCopyApp {
         long start;
         long end;
         double elapsedTime = 0.0;
-        byte[] buffer = new byte[8192]; //8KB
+        byte[] buffer = new byte[8192]; // 8KB
 
         try (FileInputStream fis = new FileInputStream("C:/tmp/dummy.pdf");
              FileOutputStream fos = new FileOutputStream("C:/tmp/dummy-out.pdf")) {
@@ -25,12 +25,11 @@ public class PdfBufferedCopyApp {
             end = System.currentTimeMillis();
             elapsedTime = (end - start) / 1000.0;
 
-            System.out.printf("Το αρχείο με μέγεθος %.1fKB (%d bytes) αντιγράφηκε επιτυχώς",
+            System.out.printf("Το αρχείο με μέγεθος %.1fKB (%d bytes) αντιγράφηκε επιτυχώς\n",
                     (counter / 1024.0), counter);
-            System.out.println("Elapsed time: " + elapsedTime + " seconds");
+            System.out.println("Elapsed Time: " + elapsedTime + " seconds");
         } catch (IOException e) {
             System.err.println(e.getMessage());
         }
-
     }
 }

@@ -3,9 +3,8 @@ package gr.aueb.cf.ch2;
 import java.util.Scanner;
 
 /**
- *  Convert years (age) to days.
+ * Convert years (ages) to days.
  */
-
 public class YearsToDays {
 
     public static void main(String[] args) {
@@ -23,6 +22,5 @@ public class YearsToDays {
 
         // Εκτύπωση των αποτελεσμάτων
         System.out.println("Age in years: " + age + ", Age in days: " + days);
-
     }
 }

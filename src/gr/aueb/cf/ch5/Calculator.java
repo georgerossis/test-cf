@@ -3,27 +3,21 @@ package gr.aueb.cf.ch5;
 import java.util.Scanner;
 
 /**
- * Εμφανίζει ένα menu επιλογών (1. Πρόσθεση, 2. Αφαίρεση κτλ).
- * Ο χρήστης επιλέγει.
- * Ανάλογα με την επιλογή εκτελείται η αντίστοιχη πράξη
- * και ετυπώνεται το αποτέλεσμα.
- * Εκτελείται επαναληπτικά μέχρι ο χρήστης να επιλέξει
- *  'Έξοδος'
+ * Απλός Υπολογιστής τσέπης με μεθόδους.
  */
 public class Calculator {
-
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         int choice;
         int result = 0;
+
         while (true) {
             printMenu();
             choice = getOneInt();
 
             if (!isChoiceValid(choice)) {
-                System.out.println("Error. Choice must be between 1-6. Try again!");
+                System.out.println("Error. Choice must be between 1-6. Try again.");
                 continue;
             }
 
@@ -52,18 +46,19 @@ public class Calculator {
     }
 
     public static boolean isChoiceValid(int choice) {
-//        if (choice >= 1 && choice <=6) {
+//        if (choice >= 1 && choice <= 6) {
 //            return true;
 //        } else {
 //            return false;
 //        }
-        return choice >= 1 && choice <=6;
+        return choice >= 1 && choice <= 6;
     }
 
     public static int getResultOnChoice(int choice) {
         int num1 = 0;
         int num2 = 0;
         int result = 0;
+
         System.out.println("Παρακαλώ εισάγετε δύο ακεραίους");
         num1 = getOneInt();
         num2 = getOneInt();
@@ -83,9 +78,6 @@ public class Calculator {
                 break;
             case 5:
                 result = mod(num1, num2);
-                break;
-            case 6:
-                System.out.println("Έξοδος");
                 break;
             default:
                 System.out.println("Error in choice");
@@ -115,5 +107,4 @@ public class Calculator {
         if (b == 0) return 0;
         return a % b;
     }
-
 }

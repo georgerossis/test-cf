@@ -3,7 +3,7 @@ package gr.aueb.cf.ch10;
 public class ArrayAdd {
 
     public static void main(String[] args) {
-        int[] arr = {9, 9, 9 ,9};
+        int[] arr = {9, 9, 9, 8};
         int[] arrOut;
 
         arrOut = addOne(arr);

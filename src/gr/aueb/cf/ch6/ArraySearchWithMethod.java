@@ -14,7 +14,7 @@ public class ArraySearchWithMethod {
         if (position == - 1) {
             System.out.println("To στοιχείο δεν βρέθηκε");
         } else {
-            System.out.printf("Value: %d, Position: %d", arr[position], (position + 1));
+                System.out.printf("Value: %d, Position: %d", arr[position], (position + 1));
         }
     }
 

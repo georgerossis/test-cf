@@ -1,10 +1,10 @@
 package gr.aueb.cf.ch2;
 
 /**
- * Expressions demo
+ * Expressions demo.
  */
-
 public class ExpressionsApp {
+
     public static void main(String[] args) {
         int num1 = 10;
         int num2 = 20;
@@ -20,20 +20,21 @@ public class ExpressionsApp {
         sub = num1 - num2;
         mul = num1 * num2;
         div = num1 / num2;
-        mod = num1 % num2;
 
-        num1++; // αυτές οι γραμμές είναι ισοδύναμες
-        num1 = num1 + 1; // κάνουν δηλαδή το ίδο πράγμα
-        num1 += 1; // δηλαδή την μοναδιαία αύξηση
+        num1++;
+        num1 = num1 + 1;
+        num1 += 1;
 
+        --num2;
 
+        num1++;
+        result1 = num1;
 
-        result1 = num1++; // έστω num1 = 8, result1 = 8 , num1 = 9
-        result2= ++num2; // έστω num2 = 8, result2 = 9, num2 = 9
+        result1 = num1++;   // έστω num1 = 8, result1 = 8, num1 = 9
+        result2 = ++num2;   // έστω num2 = 8, result2 = 9, num2 = 9
 
-        result1 = result1 + 12;
-        result1 += 12;
-
+        result1 = result1 * 12;
+        result1 *= 12;
 
     }
 }

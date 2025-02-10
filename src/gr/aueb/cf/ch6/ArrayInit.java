@@ -1,19 +1,20 @@
 package gr.aueb.cf.ch6;
 
 /**
- * Δήλωση και αρχικοποίηση εός πίνακα.
- * Populate ένα πίνακα.
- * -new
- * -unsized init
- * -array initializer
- * print τα στοιχεία ενός πίνακα
+ * Δήλωση και αρχικοποίηση ενός πίνακα.
+ * Populate ένα πίνακα
+ * - new
+ * - unsized init
+ * - array initializer
+ * - print τα στοιχεία ενός πίνακα
  */
 public class ArrayInit {
 
     public static void main(String[] args) {
-        int[] arr = new int[3];                 // declare and init
-        int[] arr2 = {1, 2, 3, 4, 5};           //unsized init
-        int[] arr3 = new int[] {1, 2, 3, 4, 5}; //array initializer
+        int[] arr = new int[3];                     // declare and initialization
+        int[] arr2 = { 1, 2, 3, 4, 5 };             // unsized initialization
+        int[] arr3;
+        arr3 = new int[] {1, 2, 3, 4, 5};           // array initializer
 
         // Populate
         arr[0] = 5;
@@ -25,10 +26,10 @@ public class ArrayInit {
             System.out.print(arr[i] + " ");
         }
 
+        // Enhanced for
         for (int el : arr3) {
-            System.out.println(el + " ");
+            System.out.print(el + " ");
         }
-
 
     }
 }

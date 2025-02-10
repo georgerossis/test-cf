@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class FileApp {
 
     public static void main(String[] args) {
-        File fd = new File("C:/tmp/file7.txt");  //fd σημαίνει file descriptor
+        File fd = new File("C:/tmp/file7.txt");     // C:\tmp\file7.txt
         String line;
         String[] tokens;
 
@@ -17,13 +17,12 @@ public class FileApp {
                 tokens = line.split("\\s+");
 
                 for (String token : tokens) {
-                    System.out.print(token + " ");;
+                    System.out.print(token.trim() + " ");
                 }
                 System.out.println();
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
     }
 }

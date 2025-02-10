@@ -5,22 +5,21 @@ import java.util.Scanner;
 public class SecretWhileFinder {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int inputNum = 0;
+        Scanner scanner = new Scanner(System.in);
+        int num = 0;
         final int SECRET = 12;
-        boolean isSuccess = false;
+        boolean success = false;
 
         do {
             System.out.println("Insert a num to guess the secret");
-            inputNum = in.nextInt();
+            num = scanner.nextInt();
 
-            if (inputNum == SECRET) {
+            if (num == SECRET) {
                 System.out.println("Secret found!!!");
-                isSuccess = true;
+                success = true;
             } else {
-                System.out.println("Try again!");
+                System.out.println("Try again!!");
             }
-        } while (!isSuccess);
-
+        } while (!success);
     }
 }

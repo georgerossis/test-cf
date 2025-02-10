@@ -1,7 +1,7 @@
 package gr.aueb.cf.ch3;
 
 /**
- * print 10 horizontal stars *
+ * Print 10 horizontal stars.
  */
 public class StarsWhile {
 
@@ -9,17 +9,16 @@ public class StarsWhile {
         int i = 1;
         int j = 10;
 
-        while (i <=10) {
+        while (i <= 10) {
             System.out.print("*");
             i++;
         }
 
         System.out.println();
 
-        while ( j>= 1) {
+        while (j >= 1) {
             System.out.print("*");
             j--;
         }
     }
-
 }

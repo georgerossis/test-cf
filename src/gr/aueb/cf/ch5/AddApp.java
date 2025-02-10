@@ -20,7 +20,7 @@ public class AddApp {
         num2 = scanner.nextInt();
 
         sum = add(num1, num2);
-        sub = AddApp.sub(num1, num2); //επειδή είμαστε μέσα στην κλάση δεν χρειάζεται να γράψουμε AddApp.sub() αλλά όπως στην από πάνω σειρά
+        sub = sub(num1, num2);
 
         System.out.println(sum);
         System.out.println(sub);

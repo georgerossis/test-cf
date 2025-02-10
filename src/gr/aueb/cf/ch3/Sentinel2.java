@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Sentinel2 {
 
     public static void main(String[] args) {
-        int i = 1;
         int positivesCount = 0;
         Scanner in = new Scanner(System.in);
         int inputNum = 0;

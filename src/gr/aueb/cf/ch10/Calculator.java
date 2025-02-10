@@ -12,15 +12,16 @@ public class Calculator {
         int result = 0;
 
         try {
-            System.out.println("Please enter two integers");
+            System.out.print("Παρακαλώ εισάγετε δύο ακέραιους.");
+            // Data binding
             num1 = scanner.nextInt();
             num2 = scanner.nextInt();
 
-            result = add(num1, num2);
+            result = div(num1, num2);
 
             System.out.println("Sum: " + result);
-        } catch (InputMismatchException e){
-            System.out.println("Η είσοδος πρέπει να είναι ακέραιοι");
+        } catch (InputMismatchException e) {
+            System.out.println("Η είσοδος πρέπει να είναι ακέραιοι.");
         } catch (Exception e) {
             System.out.println("Λάθος κατά τον υπολογισμό. Δεν μπορεί να γίνει διαίρεση με το μηδέν.");
         }
@@ -31,7 +32,7 @@ public class Calculator {
     }
 
     public static int sub(int a, int b) {
-        return a- b;
+        return a - b;
     }
 
     public static int mul(int a, int b) {
@@ -43,7 +44,7 @@ public class Calculator {
             if (b == 0) throw new Exception("Error. Denominator must not be zero");
             return a / b;
         } catch (Exception e) {
-            System.out.println("Error" + e.getMessage());
+            System.err.println("Error. " + e.getMessage());
             throw e;
         }
     }
@@ -53,9 +54,10 @@ public class Calculator {
             if (b == 0) throw new Exception("Error. Denominator must not be zero");
             return a % b;
         } catch (Exception e) {
-            System.out.println("Error" + e.getMessage());
+            System.err.println("Error. " + e.getMessage());
             throw e;
         }
     }
+
 
 }

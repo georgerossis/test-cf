@@ -3,22 +3,23 @@ package gr.aueb.cf.ch3;
 import java.util.Scanner;
 
 /**
- * Ελέγχει αν κάποιος έχει δικαίωμα να ψηφίσει
- * ηλικία > 18
+ * Δικαίωμα ψήφου σε ηλικίες > 18.
+ * Ελέγχει αν μία ηλικία έχει δικαίωμα
+ * να ψηφίσει.
  */
 public class VoteEligible {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        final int VOTING_AGE = 18;
-        int inputAge = 0;
+        Scanner scanner = new Scanner(System.in);
         boolean isEligible = false;
+        final int VOTING_AGE = 18;
+        int age = 0;
 
-        System.out.println("Please insert age");
-        inputAge = in.nextInt();
+        System.out.println("Enter your age");
+        age = scanner.nextInt();
 
-        isEligible = inputAge > VOTING_AGE;
+        isEligible = age >= VOTING_AGE;
 
-        System.out.printf("You are eligible: %b", isEligible);
+        System.out.println("You are eligible: " + isEligible);
     }
 }

@@ -3,10 +3,12 @@ package gr.aueb.cf.ch2;
 import java.util.Scanner;
 
 /**
- * Θα λαμβάνει από τον χρήστη έναν δηψήφιο ακέραιο
- * και θα εκτυπώνει το άθροισμα των ψηφίων του.
- * πχ αν ο χρήστης δώσει τον αριθμό 15
- * θα πρέπει το αποτέλεσμα να είναι 1 + 5 = 6
+ * Λαμβάνει ως input από τον χρήστη ένα
+ * διψήφιο ακέραιο και υπολογίζει και να
+ * εκτυπώνει το άθροισμα των ψηφίων του.
+ * Για παράδειγμα, αν ο χρήστης δώσει τον
+ * ακέραιο 15, θα πρέπει το αποτέλεσμα να είναι
+ * 1 + 5 = 6.
  */
 public class DigitsSum {
 
@@ -16,14 +18,15 @@ public class DigitsSum {
         int rightDigit = 0;
         int inputNum;
         int sum = 0;
-        System.out.println("Please insert two-digit integer");
+
+        System.out.println("Please insert a two-digit integer");
         inputNum = in.nextInt();
 
-        leftDigit = inputNum / 10; //με div 10 παίρνουμε το αριστερό ψηφίο
-        rightDigit = inputNum % 10; //με mod 10 παίρνουμε το δεξί ψηφίο
+        leftDigit = inputNum / 10;  // Με div 10 παίρνουμε το αριστερό ψηφίο
+        rightDigit = inputNum % 10; // Με mod 10 παίρνουμε το δεξί ψηφίο
         sum = leftDigit + rightDigit;
 
-        System.out.printf("%d + %d = %d", leftDigit, rightDigit, sum);
-
+        System.out.printf("Input num: %d, Left digit: %d, Right digit:  %d, Sum:  %d",
+                inputNum, leftDigit, rightDigit, sum);
     }
 }

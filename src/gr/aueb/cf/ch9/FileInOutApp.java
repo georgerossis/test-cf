@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class FileInOutApp {
 
     public static void main(String[] args) {
-        File inFd = new File("C:/tmp/file7.txt");  //inFd σημαίνει file descriptor
+        File inFd = new File("C:/tmp/file7.txt");
         File outFd = new File("C:/tmp/file7-out.txt");
         String line;
         String[] tokens;
@@ -22,7 +22,7 @@ public class FileInOutApp {
                 tokens = line.split("\\s+");
 
                 for (String token : tokens) {
-                    System.out.print(token.trim() + " ");;
+                    System.out.print(token.trim() + " ");
                     ps.printf("%s ", token);
                     ps.flush();
                 }
@@ -32,6 +32,5 @@ public class FileInOutApp {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
