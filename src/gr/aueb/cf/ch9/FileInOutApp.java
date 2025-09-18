@@ -22,7 +22,7 @@ public class FileInOutApp {
                 tokens = line.split("\\s+");
 
                 for (String token : tokens) {
-                    System.out.print(token.trim() + " ");
+//                    System.out.print(token + " ");
                     ps.printf("%s ", token);
                     ps.flush();
                 }

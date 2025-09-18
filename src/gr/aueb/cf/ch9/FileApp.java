@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class FileApp {
 
     public static void main(String[] args) {
-        File fd = new File("C:/tmp/file7.txt");     // C:\tmp\file7.txt
+        File fd = new File("C:/tmp/file7.txt");
         String line;
         String[] tokens;
 
@@ -17,7 +17,7 @@ public class FileApp {
                 tokens = line.split("\\s+");
 
                 for (String token : tokens) {
-                    System.out.print(token.trim() + " ");
+                    System.out.print(token + " ");
                 }
                 System.out.println();
             }
