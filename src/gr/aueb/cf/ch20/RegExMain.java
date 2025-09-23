@@ -3,21 +3,22 @@ package gr.aueb.cf.ch20;
 public class RegExMain {
 
     public static void main(String[] args) {
-        String s = "Athens    Uni   of Eco         and Bus";
-        System.out.println(isRed(s));
-        System.out.println(isRedOrGreen(s));
-        System.out.println(isrRedOrgGreen(s));
-        System.out.println(beginsWithOneUpperCaseAndEndsIning(s));
-        System.out.println(isOneLetterEndsIning(s));
-        System.out.println(whitespaceDigit(s));
-        System.out.println(anySymbolDigit(s));
-        System.out.println(isEmail(s));
-        System.out.println(isDate(s));
-        String[] tokens = doSplit(s);
-        for (String token : tokens) {
-            System.out.print(token + " ");
-        }
-        System.out.println(doReplace(s));
+        String s = "A8ana Androutsos";
+//        System.out.println(isRed(s));
+//        System.out.println(isRedOrGreen(s));
+//        System.out.println(isrRedOrgGreen(s));
+//        System.out.println(beginsWithOneUpperCaseAndEndsIning(s));
+//        System.out.println(isOneLetterEndsIning(s));
+//        System.out.println(whitespaceDigit(s));
+//        System.out.println(anySymbolDigit(s));
+//        System.out.println(isEmail(s));
+//        System.out.println(isDate(s));
+//        String[] tokens = doSplit(s);
+//        for (String token : tokens) {
+//            System.out.print(token + " ");
+//        }
+//        System.out.println(doReplace(s));
+        System.out.println(doReplaceBackReference(s));
     }
 
     /**
@@ -87,5 +88,9 @@ public class RegExMain {
     public static String doReplace(String s) {
 
         return s.replaceAll("\\s+","&");
+    }
+
+    public static String doReplaceBackReference(String s) {
+        return s.replaceAll("(.+)\\s+(.+)","$2 $1");
     }
 }

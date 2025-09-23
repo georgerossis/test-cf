@@ -22,7 +22,6 @@ public class ReplaceElementApp {
         arr[positionToUpdate] = newVal;
     }
 
-
     public static int getPosition(int[] arr, int value) {
         int positionToReturn = -1;
 

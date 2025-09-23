@@ -8,6 +8,6 @@ public class DateApp {
         int year = 2024;
 
         System.out.println("Η ημερομηνία είναι: " + day + "/" + month + "/" + year);
-        System.out.printf("Η ημερομηνία είναι: %02d/%02d/%d", day, month, year);
+        System.out.printf("Η ημερομηνία είναι: %02d/%02d/%02d", day, month, year);
     }
 }
