@@ -12,31 +12,24 @@ public class Calculator {
         int result = 0;
 
         try {
-            System.out.print("Παρακαλώ εισάγετε δύο ακέραιους.");
-            // Data binding
+            System.out.println("Please enter two integers.");
+            //data biding
             num1 = scanner.nextInt();
             num2 = scanner.nextInt();
 
-            result = div(num1, num2);
+            result = add(num1, num2);
 
             System.out.println("Sum: " + result);
         } catch (InputMismatchException e) {
-            System.out.println("Η είσοδος πρέπει να είναι ακέραιοι.");
-        } catch (Exception e) {
-            System.out.println("Λάθος κατά τον υπολογισμό. Δεν μπορεί να γίνει διαίρεση με το μηδέν.");
+            System.out.println("Input must be integers.");
+        }
+        catch (Exception e) {
+            System.out.println("Error. Division by zero not possible");
         }
     }
 
     public static int add(int a, int b) {
         return a + b;
-    }
-
-    public static int sub(int a, int b) {
-        return a - b;
-    }
-
-    public static int mul(int a, int b) {
-        return a * b;
     }
 
     public static int div(int a, int b) throws Exception {
@@ -60,4 +53,11 @@ public class Calculator {
     }
 
 
+    public static int sub(int a, int b) {
+        return a - b;
+    }
+
+    public static int mul(int a, int b) {
+        return a * b;
+    }
 }

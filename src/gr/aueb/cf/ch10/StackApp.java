@@ -1,6 +1,7 @@
 package gr.aueb.cf.ch10;
 
 public class StackApp {
+
     static int[] myStack = new int[50];
     static int top = -1;
 
@@ -12,11 +13,9 @@ public class StackApp {
             push(2);
             push(3);
             num = pop();
-//            num = pop();
-//            num = pop();
-//            num = pop();
-            //System.out.println("Popped num: " + num);
+            System.out.println("Popped num: " + num);
             printStack();
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -25,7 +24,6 @@ public class StackApp {
     public static void push(int num) throws Exception {
         try {
             if (isFull()) throw new Exception("Error. Stack is full");
-            //top++;
             myStack[++top] = num;
         } catch (Exception e) {
             e.printStackTrace();
@@ -34,12 +32,12 @@ public class StackApp {
         }
     }
 
-    public static int pop() throws Exception {
+    public static int pop()  throws Exception {
         try {
             if (isEmpty()) throw new Exception("Error. Stack is empty");
             return myStack[top--];
         } catch (Exception e) {
-            //e.printStackTrace();
+            e.printStackTrace();
             throw e;
         }
     }
@@ -57,8 +55,7 @@ public class StackApp {
             if (isEmpty()) {
                 throw new Exception("Stack is empty");
             }
-//            for (int i = 0; i <= top; i++) {
-            for (int i = top; i >= 0; i--) {
+            for (int i = 0; i <= top; i++) {
                 System.out.print(myStack[i] + " ");
             }
         } catch (Exception e) {
