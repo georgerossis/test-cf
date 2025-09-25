@@ -4,13 +4,11 @@ public class StudentDemo {
 
     public static void main(String[] args) {
         Student student = new Student();            // Invoke Default Constructor
-        Student bob = new Student(2, "Bob", "D.");  // Invoke Overloaded Constructs and populate instance
+        Student bob = new Student(2, "Bob", "D.");  // Invoke Overloaded Constructor and populates instance
 
-        bob.setLastname("Dylan");
-
-        student.setId(1);                       //student.id = 1;
-        student.setFirstname("Alice");          //student.firstname = "Alice";
-        student.setLastname("W.");              //student.lastname = "W.";
+        student.setId(1);                               //student.id = 1;
+        student.setFirstname("Alice");                  //student.firstname = "Alice";
+        student.setLastname("W.");                      //student.lastname = "W.";
 
         System.out.println("Id: " + student.getId());
         System.out.println("Firstname: " + student.getFirstname());
@@ -20,10 +18,7 @@ public class StudentDemo {
         System.out.println("Firstname: " + bob.getFirstname());
         System.out.println("Lastname: " + bob.getLastname());
 
-
         System.out.println("Student instances' count: " + Student.getStudentsCount());
-
-
 
 //        System.out.println("Id: " + student.id);
 //        System.out.println("Firstname: " + student.firstname);

@@ -13,7 +13,7 @@ public class Scoping {
         System.out.println(result);
     }
 
-    public static int add(int a, int b) {
+    public  static int add(int a, int b) {
         return a + b;
     }
 
@@ -21,8 +21,8 @@ public class Scoping {
         int result = 0;
 
         if (b == 0) {
-            boolean isZero = true;
-            System.out.println("Is zero: " + isZero);
+            boolean isZero =  true;
+            System.out.println("Is zero: " + isZero );
             return result;
         }
         return a / b;
